@@ -26,4 +26,14 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function articles()
+    {
+        return $this->hasMany('App\Article');
+    }
+
+    public function scopeSearch($query, $name)
+    {
+        return $query->where('name', 'LIKE', "%$name%");
+    }
 }

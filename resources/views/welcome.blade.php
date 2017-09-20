@@ -1,4 +1,13 @@
-<!doctype html>
+@extends('admin.template.main')
+@section('title', 'Inicio')
+@section('content')
+    <h3>Panel de Administración</h3>
+    <a href="#" class="btn btn-success">Ingresar</a>
+@endsection
+
+
+
+{{-- <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
@@ -92,4 +101,4 @@
             </div>
         </div>
     </body>
-</html>
+</html> --}}
