@@ -46,7 +46,6 @@ class ArticlesController extends Controller
         $file = $request->file('image');
         $name = 'blog_' . time() . '.' . $file->getClientOriginalExtension();
         $path = public_path() . '/images/articles';
-        dd($name);
     }
 
     /**
